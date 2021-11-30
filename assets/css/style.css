@@ -2366,6 +2366,10 @@ a:hover {
     left: 0px;
     width: 35px;
     height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+    min-width: 35px;
+    min-height: 35px;
     line-height: .8;
     padding-bottom: 20px;
     display: block;
@@ -2397,6 +2401,10 @@ a:hover {
     right: 0px;
     width: 35px;
     height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+    min-width: 35px;
+    min-height: 35px;
     display: block;
     background-color: #fff;
     line-height: 1.2;
