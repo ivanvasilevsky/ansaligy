@@ -2186,7 +2186,7 @@ a:hover {
     grid-column: span 5;
     display: flex;
     align-items: center;
-    min-height: 400px;
+    min-height: 405px;
     padding: 0 10px;
     border: solid 1px #d0cebf;
 }
@@ -2231,7 +2231,7 @@ a:hover {
 .product__slide-arrow {
     position: absolute;
     left: 45px;
-    bottom: 6px;
+    bottom: 4px;
     transform: rotate(180deg);
     color: #d5d1c4;
     font-weight: 200;
@@ -2373,6 +2373,7 @@ a:hover {
     border: solid 1px #b5ae98;
     font-size: 30px;
     font-weight: 200;
+    color: #343434;
     transition: .2s;
 }
 
@@ -2403,6 +2404,7 @@ a:hover {
     border: solid 1px #b5ae98;
     font-size: 20px;
     font-weight: 300;
+    color: #343434;
     transition: .2s;
 }
 
