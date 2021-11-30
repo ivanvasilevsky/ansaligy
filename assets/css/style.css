@@ -2201,12 +2201,6 @@ a:hover {
     margin-bottom: auto;
     max-height: 382px;
     overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.product__photo-left::-webkit-scrollbar {
-    width: 0;
 }
 
 .product__btn-img {
