@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	
+	<!-- Uselful meta tags -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	
+	<title>HomePage</title></head>
+<body>
+
+	<div class="page">
+		<div class="header">
+			<div class="container">
+				<div class="header__inner">
+		
+					<div class="header__top">
+		
+						<a href="index.html">
+							<img src="assets/img/icon/logo.svg" alt="" class="header__logo">
+						</a>
+		
+						<div id="search" class="header__search">
+							<button type="submit" class="header__search-icon">
+								<img src="assets/img/icon/search.svg" alt="">
+							</button>
+							<img id="search_cross" src="assets/img/icon/cross.svg" alt="" class="header__search-icon-exit">
+							<input type="text" class="header__input" placeholder="Поиск">
+						</div>
+		
+						<div class="header__info">
+							<a href="#" class="header__info-text">Доставка</a>
+							<img src="assets/img/icon/separation.png" alt="" class="header__separation">
+							<a href="#" class="header__info-text">Контакты</a>
+						</div>
+		
+						<img id="search_btn" src="assets/img/icon/search.svg" alt="" class="header__search-icon-btn">
+		
+		
+						<div class="header__contact">
+							<a href="#" class="header__insta">
+								<img src="assets/img/icon/insta.svg" alt="">
+							</a>
+							<a href="tel:+78909009090" class="header__number">+7 890-900-90-90</a>
+						</div>
+					</div>
+		
+					<div class="header__bottom">
+						<div class="header__menu-main">
+							<div id="menu_btn" class="header__menu-btn">Каталог</div>
+		
+							<div id="menu" class="header__menu">
+								<div class="header__menu-row">
+									<div class="header__menu-title">Тип товара</div>
+									<a href="#" class="header__menu-category">Патчи</a>
+									<a href="#" class="header__menu-category">Патчи</a>
+									<a href="#" class="header__menu-category">Патчи</a>
+								</div>
+								<div class="header__menu-row">
+									<div class="header__menu-title">Тип кожи</div>
+									<a href="#" class="header__menu-category">Патчи</a>
+									<a href="#" class="header__menu-category">Патчи</a>
+									<a href="#" class="header__menu-category">Патчи</a>
+								</div>
+								<div class="header__menu-row">
+									<div class="header__menu-title">Популярное</div>
+									<a href="#" class="header__menu-category">Патчи</a>
+									<a href="#" class="header__menu-category">Патчи</a>
+									<a href="#" class="header__menu-category">Патчи</a>
+								</div>
+							</div>
+						</div>
+		
+						<div id="nav" class="header__nav">
+							<ul>
+								<li class="active">
+									<a href="#">Лицо</a>
+								</li>
+								<li >
+									<a href="#">Глаза</a>
+								</li>
+								<li class="active">
+									<a href="catalog.html">Волосы</a>
+								</li>
+								<li>
+									<a href="#">Тело</a>
+								</li>
+							</ul>
+						</div>
+		
+						<a class="header__in-text">Войти</a>
+						<div class="header__basket">
+							<a id="basket_btn" class="header__basket-text">Корзина</a>
+							<div class="header__basket-number">2</div>
+						</div>
+		
+					</div>
+				</div>
+		
+				<div id="basket" class="basket">
+					<div class="basket__top">
+						<h2 class="basket__title">Корзина <span>2</span></h2>
+						<img id="basket_cross" src="assets/img/icon/cross.svg" alt="" class="basket__cross">
+					</div>
+		
+					<div class="basket__product">
+						<div class="basket__item">
+							<img src="assets/img/photo/product1.png" alt="" class="basket__item-img">
+							<div class="basket__item-right">
+								<div class="basket__item-title">Крем для контура глаз</div>
+								<div class="basket__item-number">x1</div>
+								<div class="basket__item-price">8990&#8376;</div>
+							</div>
+							<img src="assets/img/icon/cross.svg" alt="" class="basket__item-cross">
+						</div>
+						<div class="basket__item">
+							<img src="assets/img/photo/product1.png" alt="" class="basket__item-img">
+							<div class="basket__item-right">
+								<div class="basket__item-title">Крем для контура глаз</div>
+								<div class="basket__item-number">x1</div>
+								<div class="basket__item-price">8990&#8376;</div>
+							</div>
+							<img src="assets/img/icon/cross.svg" alt="" class="basket__item-cross">
+						</div>
+					</div>
+		
+					<div class="basket__bottom">
+						<div class="basket__itog">
+							<h2 class="basket__subtitle">К оплате</h2>
+							<div class="basket__price">17980 &#8376;</div>
+						</div>
+						<div class="basket__buy">
+							<button class="btn basket__oneclick-btn">Купить в один клик</button>
+							<button class="btn basket__zakaz-btn">Оформить заказ</button>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+		</div>		
+		<div class="intro">
+			<div class="container">
+				<div class="intro__inner">
+					<div class="intro__left">
+						<h2 class="intro__left-title">Лимитированная<br><span>Коллекция</span></h2>
+						<button class="btn btn--intro">Подробнее</button>
+					</div>
+					<div class="intro__right">
+						<a href="#" class="intro__top">
+							<h4 class="intro__top-text">Бесплатная<br> доставка<br><span>от 10 000тг</span></h4>
+						</a>
+						<a href="#" class="intro__bottom">
+							<h4 class="intro__bottom-text">Новая<br>коллекция<br>масок</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div><div class="popular">
+			<div class="container">
+				<h4 class="main--title">Популярное</h4>
+				<div class="grid--product">
+		
+					<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+					
+							<p class="card__price">5000 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+					
+							<p class="card__price">5000 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+					
+							<p class="card__price">5000 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+					
+							<p class="card__price">5000 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+					
+							<p class="card__price">5000 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+					
+							<p class="card__price">5000 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+					
+							<p class="card__price">5000 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+					
+							<p class="card__price">5000 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+		</div><div class="specail">
+			<div class="container">
+				<h4 class="main--title">Специальное предложение</h4>
+				<div class="grid--product">
+		
+					<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+							<p class="card__parice-old">5000 тг.</p>
+							<p class="card__price">4500 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+						<div class="card__discounts">15%</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+							<p class="card__parice-old">5000 тг.</p>
+							<p class="card__price">4500 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+						<div class="card__discounts">15%</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+							<p class="card__parice-old">5000 тг.</p>
+							<p class="card__price">4500 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+						<div class="card__discounts">15%</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+							<p class="card__parice-old">5000 тг.</p>
+							<p class="card__price">4500 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+						<div class="card__discounts">15%</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+							<p class="card__parice-old">5000 тг.</p>
+							<p class="card__price">4500 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+						<div class="card__discounts">15%</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+							<p class="card__parice-old">5000 тг.</p>
+							<p class="card__price">4500 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+						<div class="card__discounts">15%</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+							<p class="card__parice-old">5000 тг.</p>
+							<p class="card__price">4500 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+						<div class="card__discounts">15%</div>
+					</div>			<div class="main--card">
+						<a class="card__link" href="#">
+							<img src="assets/img/photo/product1.jpg" alt="" class="card__img">
+							<p class="card__title">Крем для контура глаз</p>
+							<p class="card__parice-old">5000 тг.</p>
+							<p class="card__price">4500 тг.</p>
+						</a>
+					
+						<div class="card__basket">
+							<svg class="card__basket-img">
+								<use xlink:href="#basket_symb"></use>
+							</svg>
+							<p class="card__basket-title">В корзину</p>
+						</div>
+						<div class="card__discounts">15%</div>
+					</div>
+				</div>
+			</div>
+		</div><div class="insta">
+			<div class="container">
+				<h4 class="main--title">Мы в Instagram</h4>
+				<div class="insta__inner">
+					<div id="instafeed-container" class="instafeed__container"></div>
+					<div class="insta__right">
+						<a href="#" target="_blank" class="insta__link">@Ansaligy.kz</a>
+						<p class="insta__text">Подпишитесь и узнавайте о новинках и скидках первыми!</p>
+						<button class="btn btn--intro btn--insta">Подписаться</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<script src="assets/js/insta.min.js"></script>
+		<svg width="0" height="0" class="hidden">
+			<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20" id="basket_symb">
+				<path
+					d="M20.0476 1H1.95238C1.4264 1 1 1.4264 1 1.95238V15.1905C1 17.2944 2.70558 19 4.80952 19H17.1905C19.2944 19 21 17.2944 21 15.1905V1.95238C21 1.4264 20.5736 1 20.0476 1Z"
+					stroke-width="1.4"></path>
+				<path d="M15 5V7.5C15 9.98528 13.2091 12 11 12C8.79086 12 7 9.98528 7 7.5V5" stroke-width="1.4"></path>
+			</symbol>
+		</svg>
+		
+		<div class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__row">
+						<div class="footer__title">Каталог</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Для лица</a></li>
+								<li><a href="">Для глаз</a></li>
+								<li><a href="">Для волос</a></li>
+								<li><a href="">Для тела</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__row">
+						<div class="footer__title">Тип товара</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Крема</a></li>
+								<li><a href="">Лосьены</a></li>
+								<li><a href="">Маски</a></li>
+								<li><a href="">Патчи</a></li>
+								<li><a href="">Пилинги</a></li>
+								<li><a href="">Сыворотки</a></li>
+								<li><a href="">Шампуни</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__row">
+						<div class="footer__title">Клиентам</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Оплата и доставка</a></li>
+								<li><a href="">Сертификаты</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__row">
+						<div class="footer__title">Служба поддержки</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="tel:+77779919991">Тел:+7 777 991 99 91</a></li>
+								<li>Адрес: Казахстан, г.Алматы, ул. Навои, 233</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<a href="#">
+						<img src="assets/img/icon/logo_wt.svg" alt="" class="footer__logo">
+					</a>
+					<div class="footer__copy">&copy; Все права защищены, 2021</div>
+					<a class="footer__insta-link">Мы в инстаграмм</a>
+				</div>
+				<a href="https://nasa.kz" target="_blank" class="footer__nasa">Разработка сайта - Nasa</a>
+			</div>
+		</div>	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+	<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
