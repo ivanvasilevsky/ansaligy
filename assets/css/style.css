@@ -2330,10 +2330,10 @@ a:hover {
 }
 
 .number {
-    display: inline-block;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 120px;
-    margin-right: 15px;
 }
 
 @media (max-width: 405px) {
@@ -2372,7 +2372,7 @@ a:hover {
     min-height: 35px;
     line-height: .8;
     padding-bottom: 20px;
-    display: block;
+    display: flex;
     background-color: #fff;
     border: solid 1px #b5ae98;
     font-size: 30px;
@@ -2405,7 +2405,7 @@ a:hover {
     max-height: 35px;
     min-width: 35px;
     min-height: 35px;
-    display: block;
+    display: flex;
     background-color: #fff;
     line-height: 1.2;
     padding-bottom: 5px;
