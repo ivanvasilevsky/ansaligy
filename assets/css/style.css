@@ -2182,11 +2182,12 @@ a:hover {
 }
 
 .product__photo {
+    position: relative;
     grid-column: span 5;
     display: flex;
     align-items: center;
     min-height: 400px;
-    padding: 10px;
+    padding: 0 10px;
     border: solid 1px #d0cebf;
 }
 
@@ -2201,6 +2202,12 @@ a:hover {
     margin-bottom: auto;
     max-height: 382px;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.product__photo-left::-webkit-scrollbar {
+    width: 0;
 }
 
 .product__btn-img {
@@ -2219,6 +2226,15 @@ a:hover {
 
 .product__btn-img.active {
     border: solid 1px #caa44a;
+}
+
+.product__slide-arrow {
+    position: absolute;
+    left: 45px;
+    bottom: 6px;
+    transform: rotate(180deg);
+    color: #d5d1c4;
+    font-weight: 200;
 }
 
 .product__photo-right {
